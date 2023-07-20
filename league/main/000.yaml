@@ -8,13 +8,13 @@ arena_zones:
     tokens: ''
 match_number: 0
 teams:
-  T08:
-    actions: ''
+  T01:
+    actions: AVIX
     disqualified: false
-    present: false
+    present: true
     zone: 0
-  T09:
+  T02:
     actions: ''
-    disqualified: false
+    disqualified: true
     present: false
     zone: 1
