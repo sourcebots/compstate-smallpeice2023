@@ -7,7 +7,7 @@ teams:
     present: true
     zone: 0
   T02:
-    actions: ''
+    actions: AVIX
     disqualified: true
     present: false
     zone: 1
