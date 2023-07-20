@@ -1,11 +1,4 @@
 arena_id: main
-arena_zones:
-  0:
-    tokens: ''
-  1:
-    tokens: ''
-  other:
-    tokens: ''
 match_number: 0
 teams:
   T01:
