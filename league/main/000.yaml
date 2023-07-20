@@ -9,7 +9,7 @@ arena_zones:
 match_number: 0
 teams:
   T08:
-    actions: AV
+    actions: ''
     disqualified: false
     present: false
     zone: 0
