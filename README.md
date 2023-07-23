@@ -11,12 +11,12 @@ teams:
   T08:
     disqualified: false
     present: true
-    zone: 0
+    zone: 1
     actions: ''
   T09:
     disqualified: false
     present: true
-    zone: 0
+    zone: 2
     actions: 'A'
 ```
 
