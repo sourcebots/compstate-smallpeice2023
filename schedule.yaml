@@ -71,7 +71,7 @@ static_knockout:
         arena: main
         start_time: 2023-08-11 13:24:00+01:00
         display_name: Quarterfinal 2
-        teams: ['020', '021']
+        teams: ['020', '030']
     2: # Semifinals
       0:
         arena: main
