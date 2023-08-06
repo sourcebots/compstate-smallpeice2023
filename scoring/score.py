@@ -24,32 +24,32 @@ class Scorer:
         accumulated_score = 0
 
         for action in actions:
-            match action.upper():
-                case 'A':  # Pick up can
-                    num_cans += 1
-                case 'V':  # Drop can
-                    if num_cans == 0:
-                        raise InvalidScoresheetException('Cannot drop a can if there are no cans')
-                    num_cans -= 1
-                case 'X':  # Reverse over line
-                    line_deficit += 1
-                case 'I':  # Forward over line
-                    if line_deficit > 0:
-                        # If we have a line deficit, decrease it by one - we've just gone back
-                        # forward over a line
-                        line_deficit -= 1
-                    else:
-                        # This is a new line passed; first, we score 2^can_count points directly.
-                        accumulated_score += 2 ** num_cans
-                        # Then, we increase the number of lines passed by one
-                        lines_passed += 1
-                        # And if it's a full lap, that is, a multiple of 6 lines, we get 4 bonus
-                        # points
-                        if lines_passed % 6 == 0:
-                            accumulated_score += 4
-                case _:
-                    raise InvalidScoresheetException(f'Invalid action {action!r}')
-        
+            action = action.upper()
+            if action == 'A':  # Pick up can
+                num_cans += 1
+            elif action == 'V':  # Drop can
+                if num_cans == 0:
+                    raise InvalidScoresheetException('Cannot drop a can if there are no cans')
+                num_cans -= 1
+            elif action == 'X':  # Reverse over line
+                line_deficit += 1
+            elif action == 'I':  # Forward over line
+                if line_deficit > 0:
+                    # If we have a line deficit, decrease it by one - we've just gone back
+                    # forward over a line
+                    line_deficit -= 1
+                else:
+                    # This is a new line passed; first, we score 2^can_count points directly.
+                    accumulated_score += 2 ** num_cans
+                    # Then, we increase the number of lines passed by one
+                    lines_passed += 1
+                    # And if it's a full lap, that is, a multiple of 6 lines, we get 4 bonus
+                    # points
+                    if lines_passed % 6 == 0:
+                        accumulated_score += 4
+            else:
+                raise InvalidScoresheetException(f'Invalid action {action!r}')
+
         # At the end, we get two bonus points for each can we still have
         accumulated_score += 2 * num_cans
 
