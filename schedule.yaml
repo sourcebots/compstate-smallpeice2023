@@ -66,14 +66,14 @@ static_knockout:
         arena: main
         start_time: 2023-08-11 13:20:00+01:00
         display_name: Quarterfinal 1
-        #        S3     S5
-        teams: ['000', '010']
+        #        S3     S6
+        teams: ['000', '020']
       1:
         arena: main
         start_time: 2023-08-11 13:24:00+01:00
         display_name: Quarterfinal 2
-        #        S6     S4
-        teams: ['020', '030']
+        #        S5     S4
+        teams: ['010', '030']
     2: # Semifinals
       0:
         arena: main
