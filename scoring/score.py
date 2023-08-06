@@ -6,13 +6,13 @@ class Scorer:
     def __init__(self, teams_data, arena_data):
         self.teams_data = teams_data
         self.arena_data = arena_data
-    
+
     def calculate_scores(self) -> dict[str, int]:
         return {
             team_tla: self.calculate_score(team_data['actions'])
             for team_tla, team_data in self.teams_data.items()
         }
-    
+
     def validate(self, other_data):
         pass
 
