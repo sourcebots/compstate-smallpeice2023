@@ -9,7 +9,8 @@ staging:
   closes: 90
   duration: 180
   signal_teams: 210
-  signal_shepherds: {}
+  signal_shepherds:
+    Shepherd: 180
 
 timezone: Europe/London
 
