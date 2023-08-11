@@ -1,0 +1,13 @@
+arena_id: main
+match_number: 22
+teams:
+  T04:
+    actions: IIIXIXIIIX
+    disqualified: false
+    present: true
+    zone: 0
+  T07:
+    actions: II
+    disqualified: false
+    present: true
+    zone: 1
