@@ -1,0 +1,11 @@
+scores:
+  - team: T02
+    league_points: 4
+  - team: T05
+    league_points: 2
+  - team: T04
+    league_points: 1
+  - team: T01
+    league_points: 1
+  - team: T06
+    league_points: 1
